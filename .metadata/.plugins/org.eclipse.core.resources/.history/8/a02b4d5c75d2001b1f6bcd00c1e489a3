@@ -1,0 +1,8 @@
+package practice;
+
+public class ciga {
+	public String name;		//담배이름
+	public int born;		//생산년도
+	public int price;		//담배가격
+	public boolean stork;	//담배재고
+}

@@ -1,0 +1,17 @@
+package constructor;
+
+public class Main3 {
+	public static void main(String[] args) {
+		BasketballPlayer player1 = new BasketballPlayer(180, 200);
+		BasketballPlayer player2 = new BasketballPlayer(150, 100);
+		
+		int power = player1.height + player1.jumpPower; 
+		if (power >= 300) {
+			player1.shot();
+		}else {
+			System.out.println("골대에 당지 않았습니다");
+		}
+		
+	
+	}
+}

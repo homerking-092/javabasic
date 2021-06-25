@@ -1,0 +1,11 @@
+package polymorphism;
+
+public class Lingard extends Person {
+	private int height;
+	private String address;
+	
+	public Lingard(String name, int age, int address) {
+		super(name, age);
+		this.address = this.address;
+	}
+}

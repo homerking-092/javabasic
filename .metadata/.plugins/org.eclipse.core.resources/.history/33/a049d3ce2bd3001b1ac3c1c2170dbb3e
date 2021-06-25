@@ -1,0 +1,25 @@
+package thiskeyword;
+
+public class Person {
+	//사람의 정보를 기입
+	public String name;
+	public int age;
+	public int money;
+	public String maior;
+	
+	//생성자를 활용합니다
+	public Person(String name, int age, int money, String maior) {
+		this.name = name;
+		age = age;
+		money = money;
+		maior = maior;
+	}
+	
+	//getInfo()를 이용해 조회
+	public void getInfo() {
+		System.out.println("이름: " + name);
+		System.out.println("나이: " + age);
+		System.out.println("소지금액: " + money);
+		System.out.println("전공: " + maior);
+	}
+}

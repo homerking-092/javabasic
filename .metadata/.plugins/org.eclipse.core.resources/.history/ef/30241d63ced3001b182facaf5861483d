@@ -1,0 +1,44 @@
+package accessmodifier3;
+
+import accessmodifier2.Parent;
+
+//Child2는 accessmodifier3 패키지 소속
+//Parent는 accessmodifier2 패키지 소속으로
+//부모 자식간 클래스 소속이 다르다
+public class Child2 extends Parent {
+	protected int e;
+	
+	//Child2의 getB 메서드는 Parent의 b에 접근한다
+	//getB()와 같이 내부 요소를 조회만 할 수 있고
+	//수정은 할 수 없게 제한하는 메서드를
+	//getter하고 한다
+	public void getB() {
+		System.out.println(b);
+	}
+	
+	//b변수의 값을 변경할 수 있도록 도와주는
+	//setB(int) 메서드를 작성 ㄱㄱ
+	//b값은 음수가  될 수 없다
+	//작성된 setB를 이용해 Main2.java에서 b값을 변경하는 로직도 ㄱㄱ
+	public void setB(int b) {
+		//setter는 사용자의 선탯폭을 제한할때 쓴다
+//		if (b <= 0) {
+//			System.out.println("b값은 0이하가 될 수 없습니다");
+//		}else {
+//			System.out.println(b);
+//		}
+		if (b >= 0) {
+			this.b = b;
+		}
+		
+	}//end setB()
+	
+}//end class
+
+
+
+
+
+
+
+

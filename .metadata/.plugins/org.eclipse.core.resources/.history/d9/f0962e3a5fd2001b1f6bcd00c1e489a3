@@ -1,0 +1,11 @@
+package constructor;
+
+public class Main3 {
+	public static void main(String[] args) {
+		BasketballPlayer player1 = new BasketballPlayer("조단", 180, 200);
+		BasketballPlayer player2 = new BasketballPlayer("영훈", 170, 100);
+		player1.shot();
+		player2.shot();
+
+	}
+}

@@ -1,0 +1,21 @@
+package interaction.game;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Warrior w1 = new Warrior("김전사");
+		Dragon d1 = new Dragon();
+		Dragon d2 = new Dragon();
+		
+		w1.wInfo();
+		w1.huntDragon(d1);		
+		w1.huntDragon(d1);		
+		w1.wInfo();
+		w1.huntDragon(d1);		
+		w1.huntDragon(d1);		
+		
+		
+		
+	}
+
+}

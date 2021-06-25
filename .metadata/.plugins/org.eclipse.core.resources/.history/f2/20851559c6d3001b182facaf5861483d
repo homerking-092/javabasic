@@ -1,0 +1,9 @@
+package accessmodifier3;
+
+import accessmodifier2.Parent;
+
+//Child2는 accessmodifier3 패키지 소속
+//Parent는 accessmodifier2 패키지 소속
+public class Child2 extends Parent {
+
+}

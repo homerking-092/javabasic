@@ -1,0 +1,6 @@
+package practice;
+
+public class Sigareto {
+	Ciga c1 = new Ciga("카멜", 1990, 4000, true);
+
+}

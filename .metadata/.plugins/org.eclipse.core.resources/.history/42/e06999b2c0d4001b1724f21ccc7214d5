@@ -1,0 +1,13 @@
+package interaction.game;
+
+public class Pig {
+	private int hp;
+	private int atk;
+	private int sld;
+	
+	public Pig() {
+		this.hp = hp;
+		this.atk = atk;
+		this.sld = sld;
+	}
+}

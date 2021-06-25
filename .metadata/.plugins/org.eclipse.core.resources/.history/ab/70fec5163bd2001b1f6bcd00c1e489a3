@@ -1,0 +1,9 @@
+package structure;
+
+public class ClassName {
+	public static void main(String[] args) {
+		//Person 2명을 만들자
+		PersonClass ps1 = new PersonClass();
+		PersonClass ps2 = new PersonClass();
+	}
+}

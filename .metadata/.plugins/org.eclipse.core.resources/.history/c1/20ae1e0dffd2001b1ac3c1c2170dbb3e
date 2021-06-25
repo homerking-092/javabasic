@@ -1,0 +1,8 @@
+package inheritance.game;
+
+public class Main1 {
+	public static void main(String[] args) {
+		//초보자계정 하나를 생성하고 확인 ㄱㄱ
+		
+	}
+}

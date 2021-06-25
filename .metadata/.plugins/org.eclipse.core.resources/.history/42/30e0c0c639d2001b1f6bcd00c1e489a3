@@ -1,0 +1,12 @@
+package structure;
+
+public class PersonClass {
+	//사람 정보를 Person처럼 정의
+	//특성 하나를 추가
+	public String name;
+	public int age;
+	public String pNum;
+	public String address;
+	//성별 추가
+	public String sex;
+}

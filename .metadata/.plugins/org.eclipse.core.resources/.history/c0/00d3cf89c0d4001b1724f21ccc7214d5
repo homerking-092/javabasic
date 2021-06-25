@@ -1,0 +1,19 @@
+package interaction.game;
+
+public class Warrior {
+	private int hp;
+	private int atk;
+	private int sld;
+	private int mp;
+	private int lv;
+	private int exp;
+	
+	public Warrior() {
+		this.hp = hp;
+		this.atk = atk;
+		this.sld = sld;
+		this.mp = mp;
+		this.lv = lv;
+		this.exp = exp;
+	}
+}

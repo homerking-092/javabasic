@@ -1,0 +1,20 @@
+package inheritance.game;
+
+public class Magician extends Commoner {
+	public int ma;	//마뎀
+	public int maValue;
+	
+	public void getInfo() {
+		System.out.println("마법사 전직!");
+		System.out.printf("아이디: " + id + ", 레벨: " + lv + 
+						  ", 체력: " + hp + ", 마나: " + mp +
+						  ", 마뎀: " + ma + ", 물방: " + ps + ", 마방: " + as);
+		}
+	public void maUp() {
+		maValue = 100;
+		ma += maValue;
+		System.out.println();
+		System.out.println("현재 마뎀: " + ma  + "(" + "+" + maValue + ")");
+		System.out.println("마뎀이" + maValue + "만큼 증가했습니다");
+	}
+}

@@ -1,0 +1,7 @@
+package date210623.method;
+
+public class Main {
+	public static void main(String[] args) {
+		Person p = new Person(10000, 0);
+	}
+}

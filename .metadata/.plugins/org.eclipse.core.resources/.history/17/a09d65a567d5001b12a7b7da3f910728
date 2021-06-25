@@ -1,0 +1,12 @@
+package polymorphism;
+
+public class Student extends Person {
+	private int grade;
+	
+	//super()를 이용해 초기화하는 생성자를 만드세연
+	public Student(String name, int age) {
+		super(name, age);
+		
+	}
+
+}

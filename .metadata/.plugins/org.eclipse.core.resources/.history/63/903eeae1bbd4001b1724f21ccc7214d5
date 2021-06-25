@@ -1,0 +1,9 @@
+package buyandsell;
+
+public class OrangeMain {
+	public static void main(String[] args) {
+		OrangeBuyer ob = new OrangeBuyer(10000);
+		ob.showOBuyer();
+		
+	}
+}

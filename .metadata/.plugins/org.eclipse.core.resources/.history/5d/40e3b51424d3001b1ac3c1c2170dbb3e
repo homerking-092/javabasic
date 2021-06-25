@@ -1,0 +1,7 @@
+package superClass;
+
+public class Main2 {
+	public static void main(String[] args) {
+		SuperSonicAirplane ssa = new SuperSonicAirplane(300);
+	}
+}

@@ -1,0 +1,26 @@
+package interaction.game;
+
+public class Warrior {
+	private int hp;
+	private int atk;
+	private int sld;
+	private int mp;
+	private int lv;
+	private int exp;
+	
+	public Warrior() {
+		hp = 100;
+		atk = 100;
+		sld = 100;
+		mp = 100;
+		lv = 10;
+		exp = 0;
+	}
+	
+	public void huntNashor(Nashor nashor) {
+		
+	}
+	
+	
+	
+}

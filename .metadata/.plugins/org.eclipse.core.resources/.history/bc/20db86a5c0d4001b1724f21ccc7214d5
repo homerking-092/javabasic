@@ -1,0 +1,13 @@
+package interaction.game;
+
+public class Croco {
+	private int hp;
+	private int atk;
+	private int sld;
+	
+	public Croco() {
+		this.hp = hp;
+		this.atk = atk;
+		this.sld = sld;
+	}
+}

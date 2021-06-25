@@ -1,0 +1,8 @@
+package practice;
+
+public class ciga {
+	public String name;
+	public int born;
+	public int price;
+	public boolean stork;
+}

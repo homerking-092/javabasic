@@ -1,0 +1,16 @@
+package constructor;
+
+public class BasketballPlayer {
+	public int height;
+	public int jumpPower;
+	
+	public BasketballPlayer(int h, int jp) {
+		height = h;
+		jumpPower = jp;
+		
+	}
+	
+	public void shot() {
+		
+	}
+}

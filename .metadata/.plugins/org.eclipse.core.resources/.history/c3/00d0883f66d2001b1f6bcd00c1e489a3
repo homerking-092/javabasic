@@ -1,0 +1,18 @@
+package constructor;
+
+import structure.PersonInfo;
+
+public class Main {
+	public static void main(String[] args) {
+		constructor.Car car1 = new constructor.Car(100, 0, "김영훈");	//
+		
+		//다른 패키지의 PersonInfo 호출
+		structure.PersonInfo pI = new structure.PersonInfo();
+		//자동차 정보 조회
+		car1.getInfo();
+		car1.accelSpeed();
+		car1.accelSpeed();
+		car1.breakSpeed();
+		
+	}
+}//end class

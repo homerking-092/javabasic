@@ -1,0 +1,13 @@
+package game;
+
+public class Commoner {
+	private int level;	//레벨
+	private int hp;		//hp
+	private int mp;		//mp
+	private int sd;		//방어력
+	private int exp;	//경험치
+	private String id;	//id
+	
+	
+	
+}

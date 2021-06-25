@@ -1,0 +1,11 @@
+package interaction.game;
+
+public class Main {
+	public static void main(String[] args) {
+		Warrior w = new Warrior();
+		w.wInfo();
+		w.HuntNashor(nashor);
+		
+		
+	}
+}

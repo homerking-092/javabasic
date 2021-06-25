@@ -1,0 +1,6 @@
+package polymorphism;
+
+public class Lingard {
+	private int height;
+	private String address;
+}

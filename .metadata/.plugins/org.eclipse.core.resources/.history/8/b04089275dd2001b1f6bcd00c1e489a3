@@ -1,0 +1,14 @@
+package constructor;
+
+public class Main3 {
+	public static void main(String[] args) {
+		BasketballPlayer player1 = new BasketballPlayer(180, 200);
+		BasketballPlayer player2 = new BasketballPlayer(150, 100);
+		
+		if (condition) {
+			
+		}
+		
+	
+	}
+}

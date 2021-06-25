@@ -1,0 +1,12 @@
+package polymorphism;
+
+public class Student extends Person {
+	private int grade;
+	
+	
+	public Student(String name, int age) {
+		super(name, age);
+		
+	}
+
+}

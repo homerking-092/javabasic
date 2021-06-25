@@ -1,0 +1,21 @@
+package buyandsell;
+
+public class Seller extends Buyer {
+	//판매자
+	//돈, 망고를 가진다
+
+	//생성자에서 망고갯수를 입력받을 수 있다
+	//돈은 0으로 ㄱㄱ
+	public Seller(int mango) {
+		super(mango);
+		
+	}
+	
+	
+	//판매시 망고갯수를 입력할 수 있고
+	//망고갯수 * 1000만큼의 돈이 올라가고
+	//망고는 판 갯수만큼 차감된다
+	//0 미만으로 망고가 줄어들 수 없다
+	
+	//showSeller를 이용해 현재 남은 망고와 돈을 볼 수 있다
+}

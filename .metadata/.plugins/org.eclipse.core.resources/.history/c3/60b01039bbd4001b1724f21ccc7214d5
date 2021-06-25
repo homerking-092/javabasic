@@ -1,0 +1,11 @@
+package buyandsell;
+
+public class OrangeBuyer {
+	private int money;
+	private int orange;
+	
+	public OrangeBuyer(int money) {
+		this.orange = 0;
+		this.money = money;
+	}
+}

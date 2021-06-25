@@ -1,0 +1,47 @@
+package accessmodifier.game;
+
+public class Warrior extends Commoner {
+	public Warrior() {
+		super(10, 300, 200, "김전사", 0);
+	}
+
+
+	public void wInfo() {
+//		setId("김전사");
+//		setExp(0);
+//		setHp(500);
+//		setLv(10);
+//		setMp(200);
+		
+		System.out.println(getId() + "의 스탯");
+		System.out.println("레벨: " + getLv());
+		System.out.println("hp: " + getHp());
+//		if (getMp() != 200) {
+//			this.getMp();
+//			System.out.println("마나: " + getMp());
+//			return;
+//		}
+		System.out.println("mp: " + getMp());
+		
+//		if (getExp() != 0) {
+//			this.getExp();
+//			System.out.println("경험치: " + getExp());
+//			return;
+//		}
+		System.out.println("경치: " + getExp());
+		
+		System.out.println();
+		
+	}
+	
+	public void doubleAttack() {
+		System.out.println(getId() + "이(가) 더블어택을 사용했습니다");
+		setExp(10);
+		mpDown(2);
+		
+		
+		System.out.println(getId() + "의 mp가 " + mpDown() + " 만큼 감소했습니다");
+		System.out.println("경험치를 " + getExp() + " 얻었습니다");
+		System.out.println();
+	}
+}

@@ -1,0 +1,8 @@
+package accessmodifier.game;
+
+public class Magician extends Commoner {
+	public Magician() {
+		super(10, 200, 200, "김궁수", 0);
+	}
+
+}

@@ -1,0 +1,19 @@
+package polymophism.game;
+
+public class Warrior {
+	private int hp;
+	private int atk;
+	private int lv;
+	private int exp;
+	private String id;
+	
+	public Warrior(String id) {
+		this.id = id;
+		this.hp = 100;
+		this.atk = 10;
+		this.lv = 10;
+		this.exp = 0;
+	}
+	
+//	public void hunt
+}

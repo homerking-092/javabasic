@@ -1,0 +1,11 @@
+package date210623.method;
+
+public class Person {
+	private int money;
+	private int fruits;
+	
+	public Person(int money, int fruits) {
+		this.money = money;
+		this.fruits = fruits;
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;accessmodifier&apos; to &apos;accessmodifier2&apos;&#x0D;&#x0A;- Original project: &apos;08-javaoop&apos;&#x0D;&#x0A;- Original element: &apos;08-javaoop/src/accessmodifier&apos;&#x0D;&#x0A;- Renamed element: &apos;08-javaoop/src/accessmodifier2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;accessmodifier&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;accessmodifier" name="accessmodifier2" qualified="false" references="true" stamp="1624409616003" textual="false" version="1.0"/>
+</session>

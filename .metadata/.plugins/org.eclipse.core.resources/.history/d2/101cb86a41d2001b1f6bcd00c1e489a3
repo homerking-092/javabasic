@@ -1,0 +1,19 @@
+package structure;
+
+public class ClassMain2 {
+	public static void main(String[] args) {
+		
+		//정보 입력
+		ClassTest ct = new ClassTest();
+		ct.name = "sony";
+		ct.age = 30; 
+		ct.phone = "019-3291-2321";
+		ct.address = "북런던";
+		ct.sex = "M";
+		ct.aff = "토트넘";
+		
+		//정보 조회
+		ct.getInfo(); 
+		
+	}
+}

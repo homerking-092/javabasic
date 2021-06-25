@@ -1,0 +1,7 @@
+package constructor;
+
+public class Cigarette {
+	public String name;
+	public int born;
+	
+}

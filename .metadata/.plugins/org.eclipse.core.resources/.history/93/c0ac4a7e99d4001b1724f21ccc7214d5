@@ -1,0 +1,15 @@
+package buyandsell;
+
+public class Buyer {
+	// 구매자
+	// 구매자는 돈, 망고갯수를 멤버변수로 가진다
+	// 은닉 구현의 위해서 private로 처리한다
+	private int money;
+	private int mNum;
+	// 생성자는(int money)를 받아 돈을 초기화한다
+	// 망고는 자동으로 0을 대입한다
+	public Buyer(int money) {
+		this.money= money;
+		this.mNum = mNum;
+	}
+}

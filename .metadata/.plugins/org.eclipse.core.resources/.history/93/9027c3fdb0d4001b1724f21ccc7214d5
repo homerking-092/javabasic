@@ -1,0 +1,9 @@
+package buyandsell;
+
+public class Main2 {
+	public static void main(String[] args) {
+		//상인 2개 만들기
+		Seller s1 = new Seller(1);
+		Seller s2 = new Seller(1);
+	}
+}

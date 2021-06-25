@@ -1,0 +1,21 @@
+package constructor;
+
+public class Cigarette {
+	public String name;
+	public int born;
+	public int price;
+	
+	public Cigarette(String n, int b, int p) {
+		name = n;
+		born = b;
+		price = p;
+		System.out.println("담배 : " + n + ", 생산년도 : " + born + "년도" + ", 가격 : " + price + "원");
+		
+		
+	}//end Cigarette()
+	
+	
+	public void getInfo() {
+		
+	}
+}//end class

@@ -1,0 +1,23 @@
+package polymophism.game;
+
+public class Baron extends Monster{
+	private int mp;
+
+	public Baron(String name, int hp, int atk) {
+		super(name, hp, atk);
+		this.mp = 10;
+	}
+	
+	public void doBattle(int uAtk) {
+		super.doBattle(uAtk);
+//		if (체력이 최대 체력보다 내려 갔을 떄) 
+		{
+			this.mp += 15;
+		}
+	}
+	
+	public int getHp() {
+		return super.getHp();
+	}
+
+}

@@ -1,0 +1,15 @@
+package inheritance.game;
+
+public class Main3 {
+	public static void main(String[] args) {
+		Magician m = new Magician();
+		m.hp = 1000;
+		m.id = "김전사";
+		m.lv = 10;
+		m.mp = 500;
+		m.ma = 1000;
+		m.getInfo();
+		m.maUp();
+		
+	}
+}

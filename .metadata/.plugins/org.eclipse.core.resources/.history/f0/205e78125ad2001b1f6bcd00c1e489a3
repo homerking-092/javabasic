@@ -1,0 +1,13 @@
+package constructor;
+
+public class Main {
+	public static void main(String[] args) {
+		Car car1 = new Car(100, 0, "김영훈");	//
+		
+		//자동차 정보 조회
+		car1.getInfo();
+		car1.accelSpeed();
+		car1.breakSpeed();
+		
+	}
+}

@@ -1,0 +1,10 @@
+package polymophism.game;
+private int mp;
+
+public class Baron extends Monster{
+	public Baron(String name, int hp, int atk) {
+		super(name);
+		this.mp = mp;
+	}
+
+}

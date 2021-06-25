@@ -1,0 +1,32 @@
+package polymorphism;
+
+public class Person {
+	//사람을 나타내는 클래스
+	//상속만을 목적으로 하는 클래스
+	//Person을 상속받는 자식들은 전부
+	//Person을 요구한느 자리에 대입될 수 있다
+	private String name;
+	private int age;
+	
+	//이름과 나이를 초기화하는 생성자
+	public Person() {
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}

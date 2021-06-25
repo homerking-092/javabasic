@@ -1,0 +1,35 @@
+package game;
+
+
+public class Warrior extends Commoner {	//Commoner를 상속 받는다
+	//private타입의 변수는 상속 안되네 
+	private int level; 	// 레벨
+	private int hp; 	// hp
+	private int mp; 	// mp
+	private int sd; 	// 방어력
+	private int myExp; 	// 현재경험치
+	private int exp; 	// 받는 경험지
+	private String id; 	// id
+	//공격력 추가
+	private int atk;
+	
+	public Warrior(String id) {
+		super(id);
+		this.level = 10;
+		this.hp = 200;
+		this.mp = 100;
+		this.sd = 10;
+		this.myExp = 10;
+//		this.id = id;
+		this.atk = 100;
+		
+		
+	}
+	public void atked() {
+		if (hp < 150) {
+			atk *= 2;
+		}
+		System.out.println("체력이 150 밑으로 떨어져 공격력이 2배가 됩니다");
+	}
+	
+}

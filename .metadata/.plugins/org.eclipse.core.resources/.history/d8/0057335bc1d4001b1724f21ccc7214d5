@@ -1,0 +1,26 @@
+package interaction.game;
+
+public class Warrior {
+	private int hp;
+	private int atk;
+	private int sld;
+	private int mp;
+	private int lv;
+	private int exp;
+	
+	public Warrior() {
+		this.hp = 100;
+		this.atk = 100;
+		this.sld = 100;
+		this.mp = 100;
+		this.lv = 10;
+		this.exp = 0;
+	}
+	
+	public void huntCroco() {
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,7 @@
+package date210623.method;
+
+public class GetBMI {
+	public static void main(String[] args) {
+		
+	}
+}

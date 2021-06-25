@@ -1,0 +1,6 @@
+package polymorphism;
+
+public class Person {
+	//사람을 나타내는 클래스
+	//상속만을 목적으로 하는 클래스
+}

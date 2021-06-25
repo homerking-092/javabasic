@@ -1,0 +1,9 @@
+package constructor;
+
+public class Main2 {
+	public static void main(String[] args) {
+		Cigarette camel = new Cigarette("camel", 1990, 4000);
+		Cigarette ms = new Cigarette("mile seven", 1990, 4500);
+		Cigarette m = new Cigarette("marvolo", 1980, 4500);
+	}
+}

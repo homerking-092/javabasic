@@ -1,0 +1,13 @@
+package interaction.game;
+
+public class Nashor {
+	private int hp;
+	private int atk;
+	private int sld;
+	
+	public Nashor() {
+		this.hp = 10;
+		this.atk = 10;
+		this.sld = 10;
+	}
+}
