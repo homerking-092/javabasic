@@ -12,7 +12,7 @@ public class SwitchCase1 {
 		//와 같이 작성한다
 		//마지막에 default문을 작성시 if~else문의 else처럼 가능하다
 		
-		int a = 7;
+		int a = 1;
 		switch (a) {
 		case 1:							//a = 1일때
 			System.out.println("one");
