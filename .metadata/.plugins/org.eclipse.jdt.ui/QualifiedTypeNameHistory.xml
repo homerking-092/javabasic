@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="SwitchCase"/>
-<fullyQualifiedTypeName name="javax.swing.text.AbstractDocument.BranchElement"/>
-<fullyQualifiedTypeName name="java.lang.Number"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="SwitchCase1"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="ParseInt"/>
 <fullyQualifiedTypeName name="structure.Person"/>
 <fullyQualifiedTypeName name="structure.Cat"/>
@@ -42,7 +36,6 @@
 <fullyQualifiedTypeName name="date210623.method.Person"/>
 <fullyQualifiedTypeName name="accessmodifier.game.Warrior"/>
 <fullyQualifiedTypeName name="accessmodifier.game.Commoner"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="accessmodifier.game.Archer"/>
 <fullyQualifiedTypeName name="accessmodifier.game.Magician"/>
 <fullyQualifiedTypeName name="buyandsell.Seller"/>
@@ -54,6 +47,17 @@
 <fullyQualifiedTypeName name="interaction.game.Croco"/>
 <fullyQualifiedTypeName name="interaction.game.Magician"/>
 <fullyQualifiedTypeName name="interaction.game.Archer"/>
-<fullyQualifiedTypeName name="interaction.game.Warrior"/>
 <fullyQualifiedTypeName name="interaction.game.Nashor"/>
+<fullyQualifiedTypeName name="interaction.game.Crap"/>
+<fullyQualifiedTypeName name="interaction.game.Warrior"/>
+<fullyQualifiedTypeName name="interaction.game.Dragon"/>
+<fullyQualifiedTypeName name="polymorphism.Salaryman"/>
+<fullyQualifiedTypeName name="polymorphism.Student"/>
+<fullyQualifiedTypeName name="polymorphism.Person"/>
+<fullyQualifiedTypeName name="polymorphism.Lingard"/>
+<fullyQualifiedTypeName name="overloading.OverTest"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="polymophism.game.Baron"/>
+<fullyQualifiedTypeName name="polymophism.game.Warrior"/>
+<fullyQualifiedTypeName name="polymophism.game.Monster"/>
 </qualifiedTypeNameHistroy>

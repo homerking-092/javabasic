@@ -6,8 +6,8 @@ public class Lingard extends Person {
 	
 	public Lingard(String name, int age, String address, int height) {
 		super(name, age);
-		this.address = address;
-		this.height = height;
+		this.address = address;		//이름, 나이를 가져오고
+		this.height = height;		//주소, 키 추가
 	}
 	
 	public void showPerson() {

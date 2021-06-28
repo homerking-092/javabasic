@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
-			<item value="org.eclipse.jst.ejb.ui"/>
-			<item value="org.eclipse.buildship.ui.creationwizards"/>
 			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.jst.j2ee.internal"/>
-			<item value="org.eclipse.emf.codegen.ui.JETNewWizards"/>
-			<item value="org.eclipse.wst.jsdt.ui.java"/>
 			<item value="org.eclipse.jpt.jaxb"/>
-			<item value="org.eclipse.jpt.jpa"/>
-			<item value="org.eclipse.m2e"/>
-			<item value="org.eclipse.oomph"/>
-			<item value="org.eclipse.pde.PDE"/>
-			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
@@ -33,6 +21,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\ict03-21\Desktop\0625gamecode.zip"/>
+			<item value="C:\Users\ict03-21\Desktop\20210625.zip"/>
+			<item value="C:\Users\ict03-21\Desktop\gamefolder.zip"/>
 			<item value="C:\Users\ict03-21\Desktop\interaction-game.zip"/>
 			<item value="C:\Users\ict03-21\Desktop\game code.zip"/>
 			<item value="C:\Users\ict03-21\Desktop\game.zip"/>
