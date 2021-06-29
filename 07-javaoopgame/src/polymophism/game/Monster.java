@@ -1,6 +1,6 @@
 package polymophism.game;
 
-public class Monster {
+public abstract class Monster {
 	private int hp;
 	private int atk;
 	private String name;
@@ -11,27 +11,33 @@ public class Monster {
 		this.atk = atk;
 	}
 
-	public void doBattle(int uAtk) {
-		this.hp = this.hp - uAtk;
-		if (this.hp <= 0) {
-			this.hp = 0;
-			System.out.println(name + "이 죽었습니다");
-		}
+	public abstract void doBattle(int uAtk); // {
+//		this.hp = this.hp - uAtk;
+//		if (this.hp <= 0) {
+//			this.hp = 0;
+//			System.out.println(name + "이 죽었습니다");
+//		}
 
-	}
-	
+//	}
+
 	public void showMonster() {
 		System.out.println("name: " + name);
 		System.out.println("hp: " + hp);
 		System.out.println("atk: " + atk);
 	}
-	
+
 	public int getAtk() {
 		return atk;
 	}
+
 	public int getHp() {
 		return hp;
 	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
 	public String getName() {
 		return name;
 	}

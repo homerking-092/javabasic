@@ -9,8 +9,14 @@ public class Baron extends Monster {
 	}
 
 	public void doBattle(int uAtk) {
-		super.doBattle(uAtk);
-		this.mp += 5;
+//		super.doBattle(uAtk);
+		setHp(getHp() - uAtk);
+//		this.mp = this.mp - uAtk;
+		if (this.getHp() <= 0) {
+			setHp(0);
+			System.out.println(getName() + "이 죽었습니다");
+			this.mp += 5;
+		}
 	}
 	
 	public void showMonster() {
@@ -21,6 +27,10 @@ public class Baron extends Monster {
 
 	public int getHp() {
 		return super.getHp();
+	}
+	public void setHp(int hp) {
+		super.setHp(hp);
+		
 	}
 
 	public int getAtk() {

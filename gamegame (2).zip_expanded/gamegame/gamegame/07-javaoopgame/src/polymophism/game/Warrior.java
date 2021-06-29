@@ -57,7 +57,7 @@ public class Warrior {
 		if (monster.getHp() <= 0) {
 			this.exp += monster.getExp();
 //			this.exp += 50;
-			System.out.println("경험치를 50 획득했습니다.");
+			System.out.println("경험치를 " + monster.getExp() + "획득했습니다.");
 //			System.out.println(monster.getName() + "과의 교전 완료");
 			System.out.println();
 //			return;
@@ -111,6 +111,9 @@ public class Warrior {
 
 	public int getHp() {
 		return this.hp;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
 	}
 
 	// public void setExp(int exp) {

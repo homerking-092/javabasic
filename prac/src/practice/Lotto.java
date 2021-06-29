@@ -4,19 +4,26 @@ public class Lotto {
 	public static void main(String[] args) {
 		// 로또 번호 추출 프로그램
 
-//		System.out.println(number);
 		int[] lotto = new int[6]; // index값 6인 배열
-		for (int i = 0;  i < lotto.length; i++) {
-			int number = (int) (Math.random() * 47 + 1); // 1 ~ 46까지 난수
+		for (int i = 0; i < lotto.length; i++) {
+			int number = (int)(Math.random() * 47 + 1); // 1 ~ 46까지 난수
 			for (int j = 0; j < lotto.length; j++) {
 				if (number == lotto[j]) {
+//					i -= 1;
 					continue;
 				}
 				lotto[i] = number;
-				System.out.println(lotto[i]);
 			}
-
+			System.out.print(lotto[i] + " ");
 		}
-
+		
+//		for (int i = 0; i < lotto.length -1; i++) {
+//			int num = (int)(Math.random() * 47 + 1);
+//			for (int j = i; j < lotto.length; j++) {
+////				if (num ) {
+//					
+////				}
+//			}
+//		}
 	}
 }

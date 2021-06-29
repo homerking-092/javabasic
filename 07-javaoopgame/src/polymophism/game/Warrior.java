@@ -58,6 +58,7 @@ public class Warrior {
 			this.exp += 50;
 			System.out.println("바론과의 교전 완료");
 			System.out.println();
+			return;
 		}
 		// 만약 경험치가 만땅이 된다면 레벨업 ㄱㄱ
 		if (getExp() >= getExp()) {

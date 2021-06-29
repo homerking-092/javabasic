@@ -1,6 +1,0 @@
-package constructor;
-
-public class BasketballPlayer {
-	public int height;
-	pulbic int jumpPower;
-}

@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="ParseInt"/>
-<fullyQualifiedTypeName name="structure.Person"/>
-<fullyQualifiedTypeName name="structure.Cat"/>
-<fullyQualifiedTypeName name="structure.ClassTest"/>
-<fullyQualifiedTypeName name="constructor.Car"/>
-<fullyQualifiedTypeName name="constructor.Cigarette"/>
-<fullyQualifiedTypeName name="garbage.Item"/>
 <fullyQualifiedTypeName name="constructor.BasketballPlayer"/>
 <fullyQualifiedTypeName name="structure.PersonInfo"/>
 <fullyQualifiedTypeName name="structure.PersonClass"/>
@@ -56,8 +49,15 @@
 <fullyQualifiedTypeName name="polymorphism.Person"/>
 <fullyQualifiedTypeName name="polymorphism.Lingard"/>
 <fullyQualifiedTypeName name="overloading.OverTest"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="polymophism.game.Baron"/>
 <fullyQualifiedTypeName name="polymophism.game.Warrior"/>
+<fullyQualifiedTypeName name="polymophism.game.Magician"/>
+<fullyQualifiedTypeName name="polymophism.game.Baron"/>
 <fullyQualifiedTypeName name="polymophism.game.Monster"/>
+<fullyQualifiedTypeName name="casting.Cat"/>
+<fullyQualifiedTypeName name="casting.Dog"/>
+<fullyQualifiedTypeName name="casting.Animal"/>
+<fullyQualifiedTypeName name="static1.StaticTest"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="static2.Asean"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

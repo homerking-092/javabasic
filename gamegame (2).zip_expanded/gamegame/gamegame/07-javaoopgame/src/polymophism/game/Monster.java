@@ -1,6 +1,6 @@
 package polymophism.game;
 
-public class Monster {
+public abstract class Monster {
 	private int hp;
 	private int atk;
 	private String name;
@@ -21,14 +21,17 @@ public class Monster {
 	}
 	
 	//유저의 공격력을 int형 데이터타입 파라미터로 받는 setter
-	public void doBattle(int uAtk) {
-		this.hp = this.hp - uAtk;
-		if (this.hp <= 0) {
-			this.hp = 0;
-			System.out.println(name + "이 죽었습니다");
-		}
+	public abstract void doBattle(int uAtk);; //{
+//		this.hp = this.hp - uAtk;
+//		setHp(getHp() - uAtk);
+//		
+//		if (getHp() <= 0) {
+////			this.hp = 0;
+//			setHp(0);
+//			System.out.println(getName() + "이 죽었습니다");
+//		}
 
-	}
+//	}
 	
 	public void showMonster() {
 		if (getHp() <= 0) {

@@ -6,12 +6,16 @@ public class Main {
 		Monster m1 = new Baron("김바론", 10, 10, 10);
 		Monster m2 = new Baron("바론2", 20, 20, 20);
 		Monster m3 = new Baron("바론3", 30, 30, 30);
-		w.huntMonster(m1);
+		w.showInfo();
 		m1.showMonster();
+		w.huntMonster(m1);
 		w.showInfo();
-		w.doubleAttack(m1);
-		w.doubleAttack(m1);
-		w.showInfo();
+		m1.showMonster();
+		w.huntMonster(m1);
+//		m1.showMonster();
+//		w.doubleAttack(m1);
+//		w.doubleAttack(m1);
+//		w.showInfo();
 		
 		
 		
