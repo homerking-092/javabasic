@@ -17,20 +17,20 @@ public class copyLotto {
 			lotto[i] = (int) (Math.random() * 45) + 1; // 랜덤 값 반환
 			for (int j = 0; j < i; j++) {
 				if (lotto[i] == lotto[j]) { // 중복 값 제거
-					j--;
+					i--;
 					break; // continue, break 
 						   //가까운 반복문 제어
 				}
 			}
 		}
 		for (int i = 0; i < lotto.length; i++) {
-//			System.out.print(lotto[i] + " ");
+			System.out.print(lotto[i] + " ");
 		}
 		
 		///배열의 값을 작은 순으로 나열
-		Arrays.sort(lotto);
-		for (int i = 0; i < lotto.length; i++) {
-			System.out.println(i);
-		}
+//		Arrays.sort(lotto);
+//		for (int i = 0; i <= lotto.length; i++) {
+//			System.out.println(i);
+//		}
 	}
 }

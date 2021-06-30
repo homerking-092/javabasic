@@ -12,8 +12,9 @@ public class String5 {
 		String munja = scan.nextLine();
 
 		for (int i = 0; i < munja.length(); i++) {
-			char get = munja.charAt(i);
-			System.out.println(get);
+//			char get = munja.charAt(i);
+//			System.out.println(get);
+			System.out.println(munja.charAt(i));
 		}
 
 	}
