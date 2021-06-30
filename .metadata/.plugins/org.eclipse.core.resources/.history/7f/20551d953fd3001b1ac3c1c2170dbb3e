@@ -1,9 +1,0 @@
-package game;
-
-public class commoner {
-	private int level;
-	private int hp;
-	private int mp;
-	private int sd;		
-	
-}

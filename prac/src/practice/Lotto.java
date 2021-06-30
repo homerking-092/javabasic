@@ -16,14 +16,5 @@ public class Lotto {
 			}
 			System.out.print(lotto[i] + " ");
 		}
-		
-//		for (int i = 0; i < lotto.length -1; i++) {
-//			int num = (int)(Math.random() * 47 + 1);
-//			for (int j = i; j < lotto.length; j++) {
-////				if (num ) {
-//					
-////				}
-//			}
-//		}
 	}
 }

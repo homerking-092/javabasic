@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="constructor.BasketballPlayer"/>
-<fullyQualifiedTypeName name="structure.PersonInfo"/>
-<fullyQualifiedTypeName name="structure.PersonClass"/>
-<fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="practice.ciga"/>
-<fullyQualifiedTypeName name="practice.Ciga"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="inheritance.Person"/>
-<fullyQualifiedTypeName name="inheritance.Student"/>
-<fullyQualifiedTypeName name="inheritance.Salaryman"/>
-<fullyQualifiedTypeName name="inheritance.game.Warrior"/>
-<fullyQualifiedTypeName name="inheritance.game.Commoner"/>
-<fullyQualifiedTypeName name="inheritance.game.Magician"/>
-<fullyQualifiedTypeName name="inheritance.game.Archer"/>
 <fullyQualifiedTypeName name="superClass.Airplane"/>
 <fullyQualifiedTypeName name="superClass.SuperSonicAirplane"/>
 <fullyQualifiedTypeName name="thiskeyword.Person"/>
@@ -52,12 +36,28 @@
 <fullyQualifiedTypeName name="polymophism.game.Warrior"/>
 <fullyQualifiedTypeName name="polymophism.game.Magician"/>
 <fullyQualifiedTypeName name="polymophism.game.Baron"/>
-<fullyQualifiedTypeName name="polymophism.game.Monster"/>
 <fullyQualifiedTypeName name="casting.Cat"/>
 <fullyQualifiedTypeName name="casting.Dog"/>
 <fullyQualifiedTypeName name="casting.Animal"/>
 <fullyQualifiedTypeName name="static1.StaticTest"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="static2.Asean"/>
+<fullyQualifiedTypeName name="final3.Counrty"/>
+<fullyQualifiedTypeName name="abstract1.Child"/>
+<fullyQualifiedTypeName name="abstract1.Parent"/>
+<fullyQualifiedTypeName name="polymophism.game.Monster"/>
+<fullyQualifiedTypeName name="com.sun.corba.se.spi.legacy.connection.GetEndPointInfoAgainException"/>
+<fullyQualifiedTypeName name="interface1.Car"/>
+<fullyQualifiedTypeName name="interface1.Bus"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
+<fullyQualifiedTypeName name="interface1.Vehicle"/>
+<fullyQualifiedTypeName name="interface1.Uracan"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
