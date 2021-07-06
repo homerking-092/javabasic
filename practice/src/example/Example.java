@@ -28,5 +28,6 @@ public class Example {
 			total += i;
 		}
 		System.out.printf("1부터 %d까지의 합: %d", num, total);
+		
 	}
 }
