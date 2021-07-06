@@ -1,7 +1,0 @@
-package accessmodifier3;
-
-import accessmodifier2.Parent;
-
-public class Child2 extends Parent {
-
-}

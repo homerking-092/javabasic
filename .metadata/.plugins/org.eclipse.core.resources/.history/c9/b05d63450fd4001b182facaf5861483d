@@ -1,9 +1,0 @@
-package accessmodifier.game;
-
-public class Magician extends Commoner {
-
-//	public Magician(String id) {
-//		super(id);
-//	}
-
-}
