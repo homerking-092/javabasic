@@ -1,9 +1,0 @@
-package buyandsell;
-
-public class Main {
-	public static void main(String[] args) {
-		Seller s = new Seller(2);
-		s.showSeller();
-		s.sellMango(1);
-	}
-}

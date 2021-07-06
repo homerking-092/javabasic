@@ -1,9 +1,0 @@
-package buyandsell;
-
-public class OrangeBuyer {
-	private int money;
-	private int orange;
-	
-	public OrangeBuyer() {
-	}
-}
