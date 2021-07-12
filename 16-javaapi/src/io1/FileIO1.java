@@ -20,5 +20,5 @@ public class FileIO1 {
 		// \n을 붙이면 된다
 		output.write("쓰고싶은 내용 작성");
 		output.write("한줄 더 작성합니다");
-	}
-}
+	}//end main
+}//end class
