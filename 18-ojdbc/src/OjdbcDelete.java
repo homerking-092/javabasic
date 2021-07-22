@@ -1,7 +1,7 @@
 import java.sql.*;
 import java.util.Scanner;
 
-public class ojdbcDelete {
+public class OjdbcDelete {
 	public static void main(String[] args) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
