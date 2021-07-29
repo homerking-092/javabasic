@@ -20,8 +20,7 @@ public class OjdbcSelect {
 
 			con = DriverManager.getConnection(url, "hr", "hr");
 			stmt = con.createStatement();
-			String sql = "SELECT employee_id, first_name, hire_date, job_id, salary FROM employees WHERE employee_id >= 200 "
-					+ "ORDER BY employee_id ASC ";
+			String sql = "SELECT employee_id, first_name, hire_date, job_id, salary FROM employees ORDER BY employee_id ASC";
 			
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
