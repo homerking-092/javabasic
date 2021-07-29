@@ -56,21 +56,10 @@ public class JdbcSelect {
 //			System.out.println(rs.getInt(1));
 			
 			// 하단에 10002번도 조회해서 콘솔에 찍어주세연
-			System.out.println(rs.next());		// 0번에서 1번으로
+			System.out.println(rs.next()); // 0번에서 1번으로
 			System.out.println(rs.getInt("emp_no"));
 			System.out.println(rs.getInt(1));
 			System.out.println(rs.next());
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패");
@@ -86,5 +75,5 @@ public class JdbcSelect {
 			}
 		}
 
-	}//
-}//
+	}//end main
+}//end class
