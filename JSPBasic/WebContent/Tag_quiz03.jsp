@@ -16,7 +16,7 @@
 	List<Integer> list = new ArrayList<Integer>();
 		int num = 0;
 	while(list.size() < 6){
-		num = (int)(Math.random() * 46) + 1;
+		num = (int)(Math.random() * 45) + 1;
 		if(!list.contains(num)){
 			list.add(num);
 		}
