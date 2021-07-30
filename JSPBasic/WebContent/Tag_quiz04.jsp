@@ -29,7 +29,7 @@
 			return "사냥꾼";
 		} else if (jobNum == 4) {
 			return "마법사";
-		} else {
+		} else  {
 			return "사제";
 		}
 
@@ -37,6 +37,8 @@
 	%>
 	
 	<%
+	
+	// String job = " ";	
 		int j = (int) (Math.random() * 4) + 1;
 	switch (j) {
 	case 1: job = "전사"; break;
@@ -60,7 +62,7 @@
 
 	<h1>당신의 역할</h1>
 	<p>
-		당신에게 부여된 역할은 <b><%=jobber()%></b> 입니다<br> 
+		당신에게 부여된 역할은 <b><%=job%></b> 입니다<br> 
 		현재 파티에 당신과 같은 역할을 가진 플레이어는<%=cnt%>명입니다<br><br> 
 		현재 파티 구성<br>
 		<%=list.toString()%> (<%=list.size()%>명 참가중)
@@ -70,7 +72,7 @@
 		if (list.size() == 10) {
 		list.clear();
 		
-		// !!향상된 for문 ArrayList!!!!!!!!!!!
+		// !!향상된 for문 && ArrayList!!!!!!!!!!!
 	}
 	%>
 
