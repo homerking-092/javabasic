@@ -24,6 +24,11 @@
 	Collections.sort(list);
 	out.println("이번주 로또 번호<br>");
 	out.println(list);
+	
+	
+	
+	
+	
 	%>
 </body>
 </html>
