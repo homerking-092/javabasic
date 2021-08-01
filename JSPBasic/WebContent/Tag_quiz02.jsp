@@ -9,7 +9,7 @@
 <body>
 	<%!
 	int stack;
-
+	
 	public String prize() {
 		if (stack % 10 == 0) {
 		}
@@ -20,8 +20,12 @@
 
 	<%
 	int ranNum = (int) (Math.random() * 8) + 2;
-	
 	stack++;
+	
+	String boom = "";
+	if(stack % 10 == 0){
+		boom = "당첨";
+	}
 	
 	%>
 	
@@ -29,7 +33,7 @@
 	<%= stack %><br> 
 	매 10번째 방문자에게는 기프티콘을 드립니다
 	<br>
-	<%= prize()%>
+	<%= boom %>
 	
 	<h2>
 		랜덤 구구단(<%=ranNum%>단)

@@ -27,29 +27,36 @@
 		return num;
 	}
 
-	String red = "빨강";
-	String yellow = "노랑";
-	String bule = "파랑";
+//	String red = "빨강";
+//	String yellow = "노랑";
+//	String bule = "파랑";
 	double col = Math.random();
-	public String ranCol() {
-		if (col >= 0.66 ) {
-			return red;
-		} else if (col >= 0.33 && col < 0.66) {
-			return yellow;
-		} else {
-			return bule ;
+		public String ranCol() {
+			if (col >= 0.66 ) {
+				return "빨강";
+			} else if (col >= 0.33 && col < 0.66) {
+				return "노랑";
+			} else {
+				return "파랑";
+			}
 		}
-	}%>
+	
+	%>
 	<%
 	// Scriptlet
 	// 지역변수 및 메서드 내부의 코드를 작성하는 태그
 	// 페이지 요청이 발생할 때마다 실행할 로직을 작성
+	
+	
+	
 	int b = 0;
 	 a++;
 	 b++;
 	 
 	 int num = ranNum();
+	 
 	 String str = ranCol();
+	 double col = Math.random();
 	
 	%>
 	<h1>Web 프로그래밍</h1>
@@ -66,7 +73,15 @@
 	행운의 숫자 :
 	<b><%=num%></b>
 	<br> 행운의 색깔 :
-	<b><%=str%></b>
+	<%
+			if(col >= 0.66){
+				out.println("빨강");
+			}else if(col >= 0.33){
+				out.println("노랑");
+			}else{
+				out.println("파랑");
+			}
+	%>
 
 
 
