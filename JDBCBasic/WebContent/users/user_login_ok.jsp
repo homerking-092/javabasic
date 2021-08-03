@@ -10,6 +10,7 @@
 	
 	String getId = (String)session.getAttribute("uid");
 	String getPw = (String)session.getAttribute("upw");
+	
 %>    
 <!DOCTYPE html>
 <html>
@@ -38,7 +39,7 @@
 			response.sendRedirect("user_login_fail.jsp");
 		}
 	%>
-	<h3><%= id %>님 환영합니다</h3>
+	<h3><%= getId %>님 환영합니다</h3>
 	
 	
 </body>
