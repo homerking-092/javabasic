@@ -50,6 +50,9 @@
 			Cookie rPw = new Cookie("remember_pw", pw);
 			rPw.setMaxAge(20);
 			response.addCookie(rPw);
+			
+			///// maxAge를 0으로 하면 쿠키가 삭제됨 ///////////
+			
 				
 			}
 			// 로그인 성공시 cookie_welcom.jsp로 보내주고

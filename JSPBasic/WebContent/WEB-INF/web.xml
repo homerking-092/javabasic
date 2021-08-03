@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- 에러페이지 처리 예시 -->
+  
+  <error-page>
+  	<error-code>404</error-code>
+  		<location>/06-errorpage/error_404.jsp</location>
+  </error-page>
+   
+  
+  
 </web-app>

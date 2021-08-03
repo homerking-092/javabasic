@@ -32,15 +32,5 @@ public class Lotto18 {
 		}
 		 
 		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
 	}//end main
 }//end class
