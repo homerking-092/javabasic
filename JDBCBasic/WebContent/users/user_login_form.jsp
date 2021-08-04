@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	// 세션이 존재하면 바로 user_login_ok.jsp로 보내주는 로직을 작성
+	String getId = (String)session.getAttribute("i_s");
+	if(getId != null){
+		response.sendRedirect("user_login_ok.jsp");
+	}
+	
+%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +25,7 @@
 		<input type="password" name="upw" placeholder="비번"><br>
 		
 		<input type="submit" value="로그인"><br>
+		<input type="reset" value="초기화"><br>
 	</form>
 	
 	<a href="users_join_form.jsp">회원가입</a>
