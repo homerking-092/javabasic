@@ -16,7 +16,11 @@ String uid = request.getParameter("uid");
 String upw = request.getParameter("upw");
 
 String getId = (String) session.getAttribute("i_s");
+// String getName = (String) session.getAttribute("n_s");
+// String getEmail = (String) session.getAttribute("e_s");
 //	String getPw = (String)session.getAttribute("upw");
+
+
 
 //(수정) 유저 패스워드도 세션을 같이 발급히켜서 user_delete_ok에서
 // 비밀번호 대조하는데 활용
@@ -72,7 +76,8 @@ System.out.println("sid: " + getId);
 	<a href="user_logout.jsp">로그아웃</a>
 	<br>
 	<a href="user_delete_form.jsp">회원탈퇴</a><br>
-	<a href="user_update_form.jsp">회원정보 수정하기</a>
+	<a href="user_update_form.jsp">회원정보 수정하기</a><br>
+	<a href="user_info.jsp">회원 정보 </a>
 
 
 </body>

@@ -5,14 +5,14 @@
 <%
 	// 1. 폼에서 던져준 데이터를 받습니다
 	String uid = request.getParameter("uid");
-	String uname = request.getParameter("uname");
-	String email = request.getParameter("email");
+	String upname = request.getParameter("upname");
+	String upemail = request.getParameter("upemail");
 	
 	// 2. 던져준 데이터를 VO를 생성해 담습니다
 	UsersVO user = new UsersVO();
 	user.setUid(uid);
-	user.setUname(uname);
-	user.setEmail(email);
+	user.setUname(upname);
+	user.setEmail(upemail);
 	
 	// 3. dao를 생성해 userUpdate; 메서드를 호출합니다
 	UsersDAO dao = UsersDAO.getInstance();
@@ -23,9 +23,9 @@
 	//	1을 리턴받았을때는 하단 body태그 내에 "<계정명> 수정이 완료되었습니다"
 	//	라는 메세지와 다시 로그인폼으로 돌아가는 링크를 띄워줍니다
 	if(updateResult == 1){
-		out.println("수정성공");
+		System.out.println("회원정보 수정성공");
 	}else if(updateResult == 0){
-		response.sendRedirect("user_ipdate_fail.jsp");
+		response.sendRedirect("user_update_fail.jsp");
 	}
 %>    
 <!DOCTYPE html>
@@ -35,7 +35,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>회원정보 수정창</h3><br>
-	<input type="button" value="뒤로가기" onclick="history.back(-1);">
+	<h3><%= uid %>님의 정보가 수정완료되었습니다</h3><br>
+	<a href="user_login_form.jsp">로그인 ㄱㄱ</a>
+	
 </body>
 </html>

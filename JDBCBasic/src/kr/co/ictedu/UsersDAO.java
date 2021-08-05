@@ -324,35 +324,40 @@ public class UsersDAO {
 
 	//userUpdate
 	public int userUpdate(UsersVO user) {
+		
 		// DB연결로직을 집어넣어주세요
 		Connection con = null;
 
 		PreparedStatement pstmt = null;
 
 		try {
+
+			
+				
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			con = DriverManager.getConnection(URL, DBID, DBPW);
 
 			// 1. SELECT 쿼리문을 작성합니다
 			// 입력받은 id가 실제로 DB에 존재하는지 조회하는 쿼리문 작성
-			String sql = "UPDATE users SET uid = ? WHERE uname = ?, email = ?";
+			String sql = "UPDATE users SET uname = ?, email = ? WHERE uid = ?";
 
 			// 2. 쿼리문의 ?자리에 적용할 변수를 집어넣습니다
 			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, user.getUid());
-			pstmt.setString(2, user.getUname());
-			pstmt.setString(3, user.getEmail());
+			pstmt.setString(1, user.getUname());
+			pstmt.setString(2, user.getEmail());
+			pstmt.setString(3, user.getUid());
 
 
 			// 3. 쿼리문 실행 및 데이터 받아오기
-			pstmt.executeQuery();
+			pstmt.executeUpdate();
 
-			System.out.println("수정된 아이디: " + user.getUid());
 			System.out.println("수정된 이름: " + user.getUname());
 			System.out.println("수정된 이메일: " + user.getEmail());
-
-
+			
+	
+	
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패");
 		} catch (SQLException e) {
@@ -371,12 +376,12 @@ public class UsersDAO {
 				e.printStackTrace();
 			}
 		}
-		return UPDATE_FAIL;
-
-
-
-
-
+		return UPDATE_SUCCESS;
 	}//end userUpdate()
+	
+	//user
+	
+	
+	
 
 }// end class

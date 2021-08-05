@@ -22,9 +22,9 @@
 	UsersVO resultData = dao.getUserInfo(user);	
 	System.out.println("디비에서 가져온 데이터: " + resultData);
 	
-	System.out.println("id: " + resultData.getUid());
-	System.out.println("name: " + resultData.getUname());
-	System.out.println("email: " + resultData.getEmail());
+// 	System.out.println("id: " + resultData.getUid());
+// 	System.out.println("name: " + resultData.getUname());
+// 	System.out.println("email: " + resultData.getEmail());
 	
 	if(resultData.getUid() == null){
 		session.invalidate();
@@ -44,8 +44,8 @@
 		<form action="user_update_ok.jsp" method="post">
 			<input type="text" name="uid" value="<%= resultData.getUid() %>" placeholder="아이디" readonly><br>			
 			<input type="password" name="upw" placeholder="비밀번호"><br>			
-			<input type="text" name="uname" value="<%= resultData.getUname() %>" placeholder="이름"><br>			
-			<input type="text" name="email" value="<%= resultData.getEmail() %>" placeholder="이메일"><br>
+			<input type="text" name="upname" value="<%= resultData.getUname() %>" placeholder="이름"><br>			
+			<input type="text" name="upemail" value="<%= resultData.getEmail() %>" placeholder="이메일"><br>
 			
 			<input type="submit" value="계정정보 &nbsp수정하기">
 		</form>
