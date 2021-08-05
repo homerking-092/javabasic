@@ -1,3 +1,5 @@
+<%@page import="kr.co.ictedu.UsersVO"%>
+<%@page import="kr.co.ictedu.UsersDAO"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -11,6 +13,10 @@ String dpw = request.getParameter("dpw");
 // 세션쪽 아이디, 비밀번호
 String getPw = (String) session.getAttribute("p_s");
 String getId = (String) session.getAttribute("i_s");
+
+// System.out.println("세션 아이디 : " + getId);
+// System.out.println("세션 비번 : " + getPw);
+// System.out.println("폼 비번 : " + dpw);
 %>
 <!DOCTYPE html>
 <html>
@@ -20,58 +26,27 @@ String getId = (String) session.getAttribute("i_s");
 </head>
 <body>
 	<%
-		Connection con = null;
-	PreparedStatement pstmt = null;
-
-	// 비밀번호를 DB쪽과 대조해서(세션 활용) 맞는 비밀번호라면
-	// DELETE 구문을 실행해 삭제해주고 비밀번호가 틀리다면
-	// 바로 로그아웃을 강제로 시킵니다
-
-	if (getPw != null) {
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			String url = "jdbc:mysql://localhost/ict03";
-			con = DriverManager.getConnection(url, "root", "mysql");
-
-			String sql = "DELETE FROM users WHERE uid = ?";
-
-			// 2. 쿼리문의 ?자리에 적용할 변수를 집어넣습니다
-
-			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, getId);
-			// 쿼리문 실행
-			pstmt.executeUpdate();
-			//세션 파기는 두번 실행할 수 없으므로
-			// 로직당 한번만 실행되도록 배치
-			session.invalidate();
-			System.out.println("계정 탈퇴완료");
-			
-		} catch (ClassNotFoundException e) {
-			System.out.println("드라이버 로딩 실패");
-		} catch (SQLException e) {
-			System.out.println("에러: " + e);
-		} finally {
-			// 연결끊기
-			try {
-		if (con != null && !con.isClosed()) {
-			con.close();
-		}
-		if (pstmt != null && !pstmt.isClosed()) {
-			pstmt.close();
-		}
-
-			} catch (SQLException e) {
-		e.printStackTrace();
-			}
-		}
-	}else{
+		// 1. DAO를 생성하고
+		UsersDAO dao = UsersDAO.getInstance();
 		
-	// session은 따로 말소키셔야 합니다
-	session.invalidate();
-	System.out.println("계정 비밀번호가 다름");
-	response.sendRedirect("user_login_form.jsp");
-	}
-
+		// 2. UsersVO를 생성하되, getPw(세션 pw), getId(세션 id)만 setter로 넣어주세요
+		UsersVO user = new UsersVO();
+		user.setUid(getId);
+		user.setUpw(getPw);
+		
+		// 3. DAO의 deleteUsers 기능을 호출하면서 파라미터로 적절한 자료를 넘겨주세요
+		int deleteResultNum = dao.usersDelete(user, dpw);
+		// 삭제로직이 잘 들어가는지 디버깅
+		System.out.println(deleteResultNum);
+		
+		// 4. 결과에 따라 세션만 파기할지 redirect까지 해줄지 결정
+		if(deleteResultNum == 1){
+			session.invalidate();
+		} else if(deleteResultNum == 0){
+			session.invalidate();
+			response.sendRedirect("user_login_form.jsp");
+		}
+		
 	%>
 	<h1><%=getId%>계정 삭제가 완료되었습니다
 	</h1>

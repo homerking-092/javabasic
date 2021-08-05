@@ -1,10 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%
-	// 세션파기
-	session.invalidate();
-	System.out.println("로그아웃 완료");
-%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>로그아웃이 완료되었습니다</h1>
-	<a href="user_login_form.jsp">로그인창 돌아가기</a>
+	<h3>메인페이지</h3>
+	
+	<a href="user_login_form.jsp">로그인</a><br>
+	<a href="users_join_form.jsp">회원가입</a>
 </body>
 </html>
