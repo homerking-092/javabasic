@@ -24,7 +24,7 @@
 	<h3><%=getId %>님 회원탈퇴를 진행합니다</h3><br>
 	<h3>비밀번호를 한번 더 입력해 주세요</h3>
 	<form action="user_delete_ok.jsp" method="post">
-		<input type="password" placeholder="dpw" name="dpw"><br>
+		<input type="password" placeholder="비밀번호" name="dpw"><br>
 		
 		<input type="submit" value="입력완료">
 	</form>
