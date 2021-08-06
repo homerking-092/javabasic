@@ -39,12 +39,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h3><%= resultData.getUid() %>의 계정정보 수정창 </h3>
 	<!-- 폼은 내부에 아아디(단, disable="true"도 입력해주세연
 		비밀번호, 이름, 이메일 -->
 		<form action="user_update_ok.jsp" method="post">
-			<input type="text" name="uid" value="<%= resultData.getUid() %>" placeholder="아이디" readonly><br>			
+			<input type="text" name="uid" required value="<%= resultData.getUid() %>" placeholder="아이디" readonly><br>			
 			<input type="password" name="upw" placeholder="비밀번호"><br>			
-			<input type="text" name="upname" value="<%= resultData.getUname() %>" placeholder="이름"><br>			
+			<input type="text" name="upname" required value="<%= resultData.getUname() %>" placeholder="이름"><br>			
 			<input type="text" name="upemail" value="<%= resultData.getEmail() %>" placeholder="이메일"><br>
 			
 			<input type="submit" value="계정정보 &nbsp수정하기">

@@ -11,8 +11,8 @@ request.setCharacterEncoding("utf-8");
 String dpw = request.getParameter("dpw");
 
 // 세션쪽 아이디, 비밀번호
-String getPw = (String) session.getAttribute("p_s");
 String getId = (String) session.getAttribute("i_s");
+String getPw = (String) session.getAttribute("p_s");
 
 // System.out.println("세션 아이디 : " + getId);
 // System.out.println("세션 비번 : " + getPw);

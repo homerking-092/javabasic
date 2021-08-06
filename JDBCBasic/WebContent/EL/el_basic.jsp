@@ -7,10 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>메인페이지</h3>
 	
-	<a href="user_login_form.jsp">로그인</a><br>
-	<a href="users_join_form.jsp">회원가입</a><br>
-	<a href="user_get_all.jsp">회원전체 목록</a>
+${10 }<br>	
+${3.14 }<br>	
+${"hello" }<br>	
+${true}<br>	
+${a + 20}<br>
+
+<hr>
+${a }<br>	
+${a < 10 }<br>	
+${(a == 15) ? "a는 15와 같다" : "a는 15와 다르다" }<br>	
+${(a > 10) || (a != 15) }<br>	
+
 </body>
 </html>

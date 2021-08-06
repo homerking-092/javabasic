@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%	
+	// 정보수정 실패시 자동 로그아웃
+	session.invalidate();
+%>    
 <!DOCTYPE html>
 <html>
 <head>

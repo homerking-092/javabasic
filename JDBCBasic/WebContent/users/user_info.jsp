@@ -26,7 +26,7 @@
 	<%= getId %>의 상세정보<br>
 	이름: <%= resultData.getUname()%><br>
 	이메일: <%= resultData.getEmail()%><br>
-	<a href="user_main.jsp">메인으로 가기</a>
+	<a href="user_login_ok.jsp">메인으로 가기</a>
 	
 </body>
 </html>

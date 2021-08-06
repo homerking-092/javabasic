@@ -18,16 +18,16 @@ String upw = request.getParameter("upw");
 String getId = (String) session.getAttribute("i_s");
 // String getName = (String) session.getAttribute("n_s");
 // String getEmail = (String) session.getAttribute("e_s");
-//	String getPw = (String)session.getAttribute("upw");
+	String getPw = (String)session.getAttribute("upw");
 
 
 
 //(수정) 유저 패스워드도 세션을 같이 발급히켜서 user_delete_ok에서
 // 비밀번호 대조하는데 활용
 
-System.out.println("id:" + uid);
-System.out.println("pw:" + upw);
-System.out.println("sid: " + getId);
+// System.out.println("id:" + uid);
+// System.out.println("pw:" + upw);
+// System.out.println("세션 아이디: " + getId);
 %>
 <!DOCTYPE html>
 <html>
@@ -56,7 +56,7 @@ System.out.println("sid: " + getId);
 		/// 로그인에 성공 한다면 세션 발급
 		if (loginResult == 1) {
 			session.setAttribute("i_s", uid);
-			session.setAttribute("i_p", upw);
+			session.setAttribute("p_s", upw);
 			System.out.println("로그인이 완료 되었습니다");
 		} else if (loginResult == 0) {
 			session.invalidate();
@@ -77,7 +77,10 @@ System.out.println("sid: " + getId);
 	<br>
 	<a href="user_delete_form.jsp">회원탈퇴</a><br>
 	<a href="user_update_form.jsp">회원정보 수정하기</a><br>
-	<a href="user_info.jsp">회원 정보 </a>
+	<a href="user_info.jsp">회원 정보 </a><br>
+	
+	<!-- 파일에 회원 전체 목록 보기 링크 -->
+	<a href="user_get_all.jsp">회원전체 목록</a>
 
 
 </body>

@@ -3,6 +3,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
+	// 한글 깨짐 방지
+	response.setCharacterEncoding("utf-8");
+	request.setCharacterEncoding("utf-8");
+	
 	// 1. 폼에서 던져준 데이터를 받습니다
 	String uid = request.getParameter("uid");
 	String upname = request.getParameter("upname");
@@ -10,6 +14,8 @@
 	
 	// 2. 던져준 데이터를 VO를 생성해 담습니다
 	UsersVO user = new UsersVO();
+	
+	// 비번번호는 안바꾸기 때문에 setter로 저장
 	user.setUid(uid);
 	user.setUname(upname);
 	user.setEmail(upemail);
@@ -35,7 +41,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3><%= uid %>님의 정보가 수정완료되었습니다</h3><br>
+	<h3><%= user.getUid() %>님의 정보가 수정완료되었습니다</h3><br>
 	<a href="user_login_form.jsp">로그인 ㄱㄱ</a>
 	
 </body>
