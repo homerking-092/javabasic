@@ -10,7 +10,7 @@
 	//	호출시 리턴되는 ArrayList를 변수에 담아주세요
 	UsersDAO dao = UsersDAO.getInstance();
 	
-	ArrayList<UsersVO> userResult = dao.getAllUser();
+	ArrayList<UsersVO> userList = dao.getAllUser();
 	
 	// 디버깅 
 // 	System.out.println(userResult);
@@ -47,7 +47,7 @@
 		
 		<%-- userList는 VO의 집합이고, 여기서 UsersVo를 하나하나 순차적으로 뽑아서 출력해야 하므로
 			향상된 for문(반목문)을 사용합니다 --%>
-<%-- 		<%  for(UsersVO user : userResult){%>  --%>
+<%-- 		<%  for(UsersVO user : userList){%>  --%>
 <!-- 			<tr> -->
 <%-- 				<td><%= user.getUid() %></td> --%>
 <%-- 				<td><%= user.getUname()%></td> --%>
@@ -59,7 +59,7 @@
 			<%-- JSTL 적용버전 
 				foreach 구문은 반복문이고, Items에 향상된 for문의 우측요소
 				그리고 var에 왼쪽 요소를 집어넣어주면 됩니다--%>
-			<c:forEach var="user" items="${userList}">
+			<c:forEach var="user" items= "<%= userList%>">
 				<tr>
 					<td>${user.uid}</td>
 					<td>${user.uname}</td>
