@@ -12,5 +12,6 @@
 	<a href="user_login_form.jsp">로그인</a><br>
 	<a href="users_join_form.jsp">회원가입</a><br>
 	<a href="user_get_all.jsp">회원전체 목록</a>
+<!-- 	<a href="MyFirstWeb/board/board-list.jsp">내가 쓴 게시물</a> -->
 </body>
 </html>
