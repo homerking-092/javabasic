@@ -1,21 +1,8 @@
-<%@page import="kr.co.ictedu.board.model.BoardVO"%>
-<%@page import="java.util.List"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="kr.co.ictedu.board.model.BoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%-- jstl 추가하기 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>   
 
-<%
-	BoardDAO dao = BoardDAO.getInstance();
-
-	List<BoardVO> boardList = dao.getBoardList();
-	
-// 	String getId = (String)session.getAttribute("i_s");
-	
-	
-%> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,10 +24,10 @@
 		</tr>
 		</thead>
 		<tbody>
-			<c:forEach var="board" items="<%= boardList %>">
+			<c:forEach var="board" items="${boardList}">
 				<tr>
 					<td>${board.bId}</td>
-					<td><a href="board_detail.jsp">${board.bTitle}</a></td>
+					<td><a href="/MyFirstWeb/boardDetail.do?bId=${board.bId }">${board.bTitle}</a></td>
 					<td>${board.bName}</td>
 					<td>${board.bDate}</td>
 					<td>${board.bHit}</td>
