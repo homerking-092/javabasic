@@ -8,8 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+	
+	<c:set var="board" value="${boardDetail }"/>
 	<h3>게시글 조회</h3>
 	<table border="1">
+<<<<<<< HEAD
 		<tr>
 			<td>번호</td>
 			<td>${boardDetail.bId}</td>
@@ -48,5 +51,22 @@
 	</table>
 	
 
+=======
+		
+		<tr>
+			<th>번호</th>
+			<td>${board.bId}</td>
+		</tr>	
+		<tr>
+			<th>글쓴이</th>
+			<td>${board.bName}</td>
+		</tr>
+		<tr>
+			<th>내용</th>
+			<td>${board.bContent}</td>
+		</tr>
+	</table>
+<%-- 	${boardDetail } --%>
+>>>>>>> 57e7f5ad61fcfc39bdd7a360f935c447b549ef03
 </body>
 </html>
