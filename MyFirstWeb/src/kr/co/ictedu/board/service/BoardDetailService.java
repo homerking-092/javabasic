@@ -12,7 +12,7 @@ public class BoardDetailService implements IBoardService {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		// url에 묻어온 글 번호를 getParameter를 이용해 얻습니다
 		String bId = request.getParameter("bId");
-		
+		System.out.println("파라미터값 전달 : " + bId);
 		// DAO를 생성
 		BoardDAO dao = BoardDAO.getInstance();
 		
@@ -20,9 +20,11 @@ public class BoardDetailService implements IBoardService {
 		BoardVO board = dao.getBoardDetail(bId);
 		
 		// 포워딩을 위해 setAttribute()로 데이터를 실어줍니다
+		// 여기서 boardDetail로 보냈으면
+		//.jsp에서도 같은 명칭을 써주셔야 합닏.
 		request.setAttribute("boardDetail", board);
 		
-		System.out.println("service id: " + board);
+		System.out.println("service board: " + board);
 		
 	}
 

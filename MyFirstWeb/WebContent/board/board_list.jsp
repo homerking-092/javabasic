@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%-- jstl 추가하기 --%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>   
+	pageEncoding="UTF-8"%>
+<%-- jstl 추가하기 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
 <html>
@@ -11,17 +11,17 @@
 </head>
 <body>
 	<h1>게시물 목록</h1>
-	
+
 	<%-- 테이블 형태로 작성 --%>
 	<table border="1">
 		<thead>
-		<tr>
-			<th>글번호</th>
-			<th>글제목</th>
-			<th>글쓴이</th>
-			<th>쓴날짜</th>
-			<th>조회수</th>
-		</tr>
+			<tr>
+				<th>글번호</th>
+				<th>글제목</th>
+				<th>글쓴이</th>
+				<th>쓴날짜</th>
+				<th>조회수</th>
+			</tr>
 		</thead>
 		<tbody>
 			<c:forEach var="board" items="${boardList}">
@@ -35,6 +35,7 @@
 			</c:forEach>
 		</tbody>
 	</table>
-	
+	<a href="/MyFirstWeb/board/board_write_form.jsp"><input type="button" value="글쓰기"></a>
+
 </body>
 </html>
