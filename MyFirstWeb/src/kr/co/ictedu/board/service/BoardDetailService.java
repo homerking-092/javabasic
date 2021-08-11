@@ -24,7 +24,7 @@ public class BoardDetailService implements IBoardService {
 		//.jsp에서도 같은 명칭을 써주셔야 합닏.
 		request.setAttribute("boardDetail", board);
 		
-		System.out.println("service board: " + board);
+		System.out.println("service 상세조회: " + board);
 		
 	}
 

@@ -43,8 +43,7 @@
 				<input type="submit" value="수정하기">
 				<input type="reset" value="초기화">
 				<a href="/MyFirstWeb/boardselect.do">
-				<input type="button" value="게시글 목록"> </a>
-										
+				<input type="button" value="게시글 목록"></a>
 			</td>
 		</tr>
 	</table>

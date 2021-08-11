@@ -12,7 +12,7 @@
 	<c:set var="board" value="${boardDetail }"/>
 	<h3>게시글 조회</h3>
 	<table border="1">
-<<<<<<< HEAD
+
 		<tr>
 			<td>번호</td>
 			<td>${boardDetail.bId}</td>
@@ -35,38 +35,32 @@
 			<td>글쓴이</td>
 			<td>${boardDetail.bName}</td>
 		</tr>
+		
 		<tr>
-			<td><a href="/MyFirstWeb/boardselect.do">
-				<input type="button" value="게시글 목록"> </a>
+			<td>
 				<form action="/MyFirstWeb/boarddelete.do" method="post">
 					<input type="hidden" value="${boardDetail.bId }" name="bId"/>
 					<input type="submit" value="삭제하기"/>
 				</form>
+			</td>
+			<td>
 				<form action="/MyFirstWeb/boardupdate.do" method="post">
 					<input type="hidden" value="${boardDetail.bId }" name="bId">
 					<input type="submit" value="수정하기"> 
 				</form>
 			</td>
+			<td>
+				<a href="/MyFirstWeb/boardselect.do">
+				<input type="button" value="게시글 목록"></a>
+			</td>
 		</tr>
 	</table>
 	
 
-=======
 		
-		<tr>
-			<th>번호</th>
-			<td>${board.bId}</td>
-		</tr>	
-		<tr>
-			<th>글쓴이</th>
-			<td>${board.bName}</td>
-		</tr>
-		<tr>
-			<th>내용</th>
-			<td>${board.bContent}</td>
-		</tr>
-	</table>
+
+		
 <%-- 	${boardDetail } --%>
->>>>>>> 57e7f5ad61fcfc39bdd7a360f935c447b549ef03
+
 </body>
 </html>

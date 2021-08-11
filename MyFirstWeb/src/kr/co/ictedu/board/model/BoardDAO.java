@@ -166,11 +166,8 @@ public class BoardDAO {
 				board.setbContent(rs.getString("bcontent"));
 				board.setbDate(rs.getTimestamp("bdate"));
 				board.setbHit(rs.getInt("bhit"));
-<<<<<<< HEAD
-				System.out.println("db board: " + board);
-=======
-				System.out.println("db board: " + board); 
->>>>>>> 57e7f5ad61fcfc39bdd7a360f935c447b549ef03
+
+				System.out.println("상세조회 정보: " + board);
 			}
 
 		} catch (SQLException e) {
@@ -214,7 +211,7 @@ public class BoardDAO {
 
 			pstmt.executeUpdate();
 			
-			System.out.println("db delete: " + bId);
+			System.out.println("db delete 번호: " + bId);
 			resultCode = 1;
 
 		} catch (Exception e) {

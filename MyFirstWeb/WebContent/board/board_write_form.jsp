@@ -25,8 +25,8 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="submit" value="글쓰기"> 
-					<input type="reset"	value="지우기">
+					<input type="submit" value="등록"> 
+					<input type="reset"	value="초기화">
 				</td>	
 			</tr>
 		</table>

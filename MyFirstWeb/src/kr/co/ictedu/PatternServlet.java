@@ -129,7 +129,7 @@ public class PatternServlet extends HttpServlet {
 			// 3. 수정한 다음은 디테일로 보내기
 			// 내가 수정한 글 번호 받아오기
 			String strBid = request.getParameter("bId");
-			ui = "/boardDetail.do?bId =" + strBid;
+			ui = "/boarddetail.do?bId =" + strBid;
 			
 		}else if (uri.equals("/MyFirstWeb/boarddelete.do")) {
 			sv = new BoardDeleteService();

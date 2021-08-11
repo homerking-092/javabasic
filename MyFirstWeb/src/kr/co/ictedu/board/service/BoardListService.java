@@ -23,7 +23,7 @@ public class BoardListService implements IBoardService {
 		// request에 데이터를 실어놔야 합니다
 		// request.setAttribute("명칭", 데이터);
 		request.setAttribute("boardList", boardList);
-		System.out.println("board: " + boardList);
+		System.out.println("service 게시물 데이터: " + boardList);
 
 	}
 
