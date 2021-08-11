@@ -118,6 +118,7 @@ public class BoardDAO {
 				boardList.add(board);
 
 			}
+//			System.out.println("db board: " + boardList);
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -163,7 +164,7 @@ public class BoardDAO {
 				board.setbContent(rs.getString("bcontent"));
 				board.setbDate(rs.getTimestamp("bdate"));
 				board.setbHit(rs.getInt("bhit"));
-				System.out.println("db bid: " + board); 
+				System.out.println("db board: " + board); 
 			}
 
 		} catch (SQLException e) {

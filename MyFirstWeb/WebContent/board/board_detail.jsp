@@ -8,15 +8,24 @@
 <title>Insert title here</title>
 </head>
 <body>
+	
+	<c:set var="board" value="${boardDetail }"/>
 	<h3>게시글 조회</h3>
 	<table border="1">
-<%-- 		<c:forEach var="board" items="${boardDetail }"> --%>
-<!-- 		<tr> -->
-<!-- 			<th>내용</th> -->
-<%-- 			<td>${board.bContent}</td> --%>
-<!-- 		</tr>	 -->
-<%-- 		</c:forEach> --%>
+		
+		<tr>
+			<th>번호</th>
+			<td>${board.bId}</td>
+		</tr>	
+		<tr>
+			<th>글쓴이</th>
+			<td>${board.bName}</td>
+		</tr>
+		<tr>
+			<th>내용</th>
+			<td>${board.bContent}</td>
+		</tr>
 	</table>
-	${boardDetail }
+<%-- 	${boardDetail } --%>
 </body>
 </html>

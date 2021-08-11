@@ -22,7 +22,7 @@ public class BoardDetailService implements IBoardService {
 		// 포워딩을 위해 setAttribute()로 데이터를 실어줍니다
 		request.setAttribute("boardDetail", board);
 		
-		System.out.println("service id: " + board);
+		System.out.println("service board: " + board);
 		
 	}
 
