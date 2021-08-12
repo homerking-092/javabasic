@@ -13,7 +13,7 @@
 	<h1>게시물 목록</h1>
 
 	<%-- 테이블 형태로 작성 --%>
-	<a href="/MyFirstWeb/board/board_write_form.jsp"><input type="button" value="글쓰기"></a>
+	
 	<table border="1">
 		<thead>
 			<tr>
@@ -36,7 +36,8 @@
 			</c:forEach>
 		</tbody>
 	</table>
-	
+	<a href="/MyFirstWeb/board/board_write_form.jsp"><input type="button" value="글쓰기"></a>
+	<a href=""><input type="button" value="로그아웃"> </a>
 
 </body>
 </html>

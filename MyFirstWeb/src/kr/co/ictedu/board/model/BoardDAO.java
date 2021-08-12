@@ -53,8 +53,7 @@ public class BoardDAO {
 		// bName, bTitle, bContent는 폼에서 날려준걸 넣음
 		// bDate는 나동으로 현재 서버시간을 입력함
 		// bhit는 자동으로 0을 입력함
-		String sql = "INSERT INTO jspboard (bname, btitle, bcontent, bdate, bhit)" 
-					+ "VALUES(?, ?, ?, now(), 0)";
+		String sql = "INSERT INTO jspboard (bname, btitle, bcontent, bdate, bhit)" + "VALUES(?, ?, ?, now(), 0)";
 
 		try {
 			// 커넥션 생성 및 pstmt에 쿼리문 넣고 완성시켜서 실행까지 하고
@@ -210,7 +209,7 @@ public class BoardDAO {
 			pstmt.setString(1, bId);
 
 			pstmt.executeUpdate();
-			
+
 			System.out.println("db delete 번호: " + bId);
 			resultCode = 1;
 
@@ -234,7 +233,7 @@ public class BoardDAO {
 		}
 		return resultCode;
 	}// end deleteBoard()
-	
+
 	/// 업데이트
 	public int updateBoard(BoardVO board) {
 		// connection, preparedStatement 객체 선언
@@ -243,9 +242,8 @@ public class BoardDAO {
 		int result;
 		// 구문작성
 
-		String sql = "UPDATE jspboard SET bName =?, bTitle = ?, bContent = ?,"+
-					"bDate = ?, bHit = ? " +
-					"WHERE bId = ?";
+		String sql = "UPDATE jspboard SET bName =?, bTitle = ?, bContent = ?," + "bDate = ?, bHit = ? "
+				+ "WHERE bId = ?";
 
 		try {
 			// 커넥션 생성 및 pstmt에 쿼리문 넣고 완성시켜서 실행까지 하고
@@ -285,5 +283,43 @@ public class BoardDAO {
 		return result;
 	}// end updateBoard()
 
+	// 글 조회수를 상승시키는 메서드
+	public void upHit(String bId) {
+		// 필요 변수들을 생성
+		Connection con = null;
+		PreparedStatement pstmt = null;
+
+		// 특정 글의 조회수를 1 올리는 퀴리문
+		String sql = "UPDATE jspboard SET bHit = bHit + 1 WHERE bId = ?";
+		
+		// DB연결 후 코드를 실행
+		try {
+			// 커넥션 생성 및 pstmt에 쿼리문 넣고 완성시켜서 실행까지 하고
+			// close()로 메모리회수까지 해주세욘
+
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, bId);
+			pstmt.executeUpdate();
+
+		} catch (Exception e) {
+			System.out.println("에러: " + e);
+			e.printStackTrace();
+
+		} finally {
+			try {
+				if (con != null && !con.isClosed()) {
+					con.close();
+				}
+				if (pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+
+		}
+
+	}
 
 }// end class
