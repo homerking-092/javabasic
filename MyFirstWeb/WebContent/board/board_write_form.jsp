@@ -21,7 +21,8 @@
 			</tr>
 			<tr>
 				<td>글쓴이</td>
-				<td><input type="text" name="writer" size="10"></td>
+<!-- 				<td><input type="text" name="writer" size="10"></td> -->
+				<td>${bWriter }</td>
 			</tr>
 			<tr>
 				<td>

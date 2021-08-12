@@ -41,6 +41,7 @@ public class BoardWriteService implements IBoardService {
 			String bContent = request.getParameter("content");
 			String bWriter = request.getParameter("writer");
 
+			request.setAttribute("bWriter", bWriter);
 			// dao 생성
 			BoardDAO dao = BoardDAO.getInstance();
 
