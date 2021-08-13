@@ -291,7 +291,7 @@ public class BoardDAO {
 
 		// 특정 글의 조회수를 1 올리는 퀴리문
 		String sql = "UPDATE jspboard SET bHit = bHit + 1 WHERE bId = ?";
-		
+
 		// DB연결 후 코드를 실행
 		try {
 			// 커넥션 생성 및 pstmt에 쿼리문 넣고 완성시켜서 실행까지 하고
@@ -320,6 +320,94 @@ public class BoardDAO {
 
 		}
 
-	}
+	}// end upHit()
+
+	// 페이지 번호에 맞는 게시물 가져오기
+	public List<BoardVO> getPageList(int pageNum) {
+		// 내부에서 사용할 변수 선언
+		List<BoardVO> boardList = new ArrayList<>();
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		// 쿼리문(SELECT구문, 역순, 10개씩 pageNum에 맞춰서);
+		String sql = "SELECT * FROM jspboard ORDER BY bid DESC " + "LIMIT ?, 10";
+		try {
+			// 연결구문을 다 작성해주세요. 리턴구문까지.
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+
+			pstmt.setInt(1, pageNum);
+			rs = pstmt.executeQuery();
+
+			while (rs.next()) {
+				BoardVO board = new BoardVO();
+
+				board.setbId(rs.getInt("bId"));
+				board.setbName(rs.getString("bName"));
+				board.setbTitle(rs.getString("bTitle"));
+				board.setbContent(rs.getString("bContent"));
+				board.setbDate(rs.getTimestamp("bDate"));
+				board.setbHit(rs.getInt("bHit"));
+
+				boardList.add(board);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (con != null && !con.isClosed()) {
+					con.close();
+				}
+				if (pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+				if (rs != null && !rs.isClosed()) {
+					rs.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return boardList;
+	} // end getPageList
+
+	// 페이징 처리를 위해 DB내 전체 데이터 개수 알아오기
+	public int getBoardCount() {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		int countNum = 0;
+
+		String sql = "SELECT COUNT(*) FROM jspboard";
+
+		try {
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				countNum = rs.getInt(1);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (con != null && !con.isClosed()) {
+					con.close();
+				}
+				if (pstmt != null && !pstmt.isClosed()) {
+					pstmt.close();
+				}
+				if (rs != null && !rs.isClosed()) {
+					rs.close();
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return countNum;
+	} // end getCountBoard()
 
 }// end class
