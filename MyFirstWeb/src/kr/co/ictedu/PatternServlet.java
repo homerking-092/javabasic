@@ -127,7 +127,7 @@ public class PatternServlet extends HttpServlet {
 		} else if (uri.equals("/MyFirstWeb/userlogout.do")) {
 			usv = new UserLogoutService();
 			usv.execute(request, response);
-			ui = "/MyFirstWeb/login.do";
+			ui = "/users/user_login_form.jsp";
 
 		} else if (uri.equals("/MyFirstWeb/userdelete.do")) {
 			System.out.println("탈퇴 요청 확인");

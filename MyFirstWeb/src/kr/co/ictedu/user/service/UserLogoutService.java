@@ -13,6 +13,8 @@ public class UserLogoutService implements IUserService {
 		session = request.getSession();
 		session.invalidate();
 		
+		System.out.println("로그아웃 세션: " + session);
+		
 
 	}
 
