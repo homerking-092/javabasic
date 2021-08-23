@@ -6,6 +6,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
@@ -13,12 +15,12 @@
 	<h1>게시물 목록</h1>
 
 	<a href="/MyFirstWeb/board/board_write_form.jsp"><input
-		type="button" value="글쓰기"></a>
-	<a href="/MyFirstWeb/userlogout.do"><input type="button"
+		type="button" class="btn btn-danger" value="글쓰기"></a>
+	<a href="/MyFirstWeb/userlogout.do"><input type="button" class="btn btn-link"
 		value="로그아웃"> </a>
 
 	<%-- 테이블 형태로 작성 --%>
-	<table border="1">
+	<table class="table table-striped table-hover">
 		<thead>
 			<tr>
 				<th>글번호</th>
