@@ -42,14 +42,15 @@
 			<div class="col-md-1">
 				<input type="submit" value="로그인" class="btn btn-primary">
 			</div>
+			<div class="col-md-2">
+			<a href="http://localhost:8181/MyFirstWeb/users/user_join_form.jsp">
+			<input type="button" value="회원가입" class="btn btn-info"></a>
+			</div>
 			</div>	<!-- div loginBtn row -->
 
 
 
-			<input type="reset" value="초기화"> <a
-				href="http://localhost:8181/MyFirstWeb/users/user_join_form.jsp">
-				<input type="button" value="회원가입">
-			</a>
+<!-- 			<input type="reset" value="초기화">  -->
 		</form>
 	</div>
 </body>
