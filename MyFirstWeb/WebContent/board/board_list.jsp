@@ -36,9 +36,9 @@
 		<tbody>
 			<c:forEach var="board" items="${boardList}">
 				<tr>
-					<td>${board.bId}</td>
+					<td class="badge rounded-pill bg-secondary">${board.bId}</td>
 					<td><a href="/MyFirstWeb/boarddetail.do?bId=${board.bId}">${board.bTitle}</a></td>
-					<td>${board.bName}</td>
+					<td class = "badge bg-secondary">${board.bName}</td>
 					<td>${board.bDate}</td>
 					<td>${board.bHit}</td>
 				</tr>
